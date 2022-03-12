@@ -110,8 +110,8 @@ function main () {
     \
     -e AUDIO_GID="$(getent group audio | cut -d: -f3)" \
     -e VIDEO_GID="$(getent group video | cut -d: -f3)" \
-    -e GID="$(id -g)" \
-    -e UID="$(id -u)" \
+    -e GID="0" \
+    -e UID="0" \
     \
     --ipc=host \
     --privileged \
